@@ -1,5 +1,6 @@
 blocksit
 ========
 
-pinterest-like 
+pinterest-like. 
+
 added sorting options
