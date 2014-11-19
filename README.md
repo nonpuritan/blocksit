@@ -1,6 +1,4 @@
 blocksit
 ========
 
-pinterest-like. 
-
-added sorting options
+added options for sorting pinterest-like grid
