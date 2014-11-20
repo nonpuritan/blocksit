@@ -6,7 +6,7 @@
 		offsetX: 5,
 		offsetY: 5,
 		adjustWidth: false,
-		blockElement: 'div',
+		sortElementClass: 'div',
 		sortElement:'',
 		sortOpt:'asc'
 	};
@@ -164,13 +164,11 @@
 	// sort container division
 	$.fn.sortUsingNestedText = function() {
 		var items = container.children("div").sort(function(a, b) {
-			var vA = $(blocksOptions.sortElement, a).text();
-			var vB = $(blocksOptions.sortElement, b).text();
+			var vA = $(blocksOptions.sortElementClass, a).text();
+			var vB = $(blocksOptions.sortElementClass, b).text();
 
-			var _opt_true  = (blocksOptions.sortOpt=='asc') ? 1 : 0;
-			var _opt_false = (blocksOptions.sortOpt=='asc') ? 0 : 1;
-
-			return (vA < vB) ? -1 : (vA > vB) ? _opt_true : _opt_false;
+			if(blocksOptions.sortOpt=='asc') return (vA < vB) ? -1 : (vA > vB) ? 1 : 0;
+			else return (vA > vB) ? -1 : (vA < vB) ? 1 : 0;
 		});
 		container.append(items);
 	}
