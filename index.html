@@ -3,6 +3,136 @@
     <link href="./layout/css/blocksit_promotion.css" rel="stylesheet" media="screen">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="./layout/js/blocksit.js"></script>
-    <script></script>
+    <script>
+      var col;
+    	var currentWidth = 1280;
+    		var conWidth;
+    		if(winWidth < 350) {
+    			conWidth = 300;
+    			col = 2;
+    		} else if(winWidth < 410) {
+    			conWidth = 340;
+  			col = 2;
+  		} else if(winWidth < 500) {
+  			conWidth = 400;
+  			col = 2;
+  		} else if(winWidth < 690) {
+  			conWidth = 500;
+  			col = 3;
+  		} else if(winWidth < 800) {
+  			conWidth = 700;
+  			col = 4;
+  		} else if(winWidth < 1000) {
+  			conWidth = 800;
+  			col = 4;
+  		} else {
+  			conWidth = 1280;
+  			col = 7;
+  		}
+  		
+  		currentWidth = conWidth;
+  		$('#container').width(conWidth);
+  		$('#container').BlocksIt({
+  			numOfCol: col,
+  			offsetX: 8,
+  			offsetY: 8
+      });
+    </script>
   </head>
   <body>
+    <div id="wraper">
+        	  <div id="container">
+				<div class="grid" id="div-detail-img">
+					<div class="grid_padding">
+						<div class="imgholder">
+							<img src=".images/img01.gif" />
+						</div>
+						<div class="dscr-wrap">description</div>
+						<div class="reg-date-wrap meta">2014.11.20 11:12:59</div>
+						<div class="name-wrap">nonpuritan</div>
+					</div>
+				</div>
+				<div class="grid" id="div-detail-img">
+					<div class="grid_padding">
+						<div class="imgholder">
+							<img src=".images/img01.gif" />
+						</div>
+						<div class="dscr-wrap">description</div>
+						<div class="reg-date-wrap meta">2014.11.20 11:12:59</div>
+						<div class="name-wrap">nonpuritan</div>
+					</div>
+				</div>
+				<div class="grid" id="div-detail-img">
+					<div class="grid_padding">
+						<div class="imgholder">
+							<img src=".images/img01.gif" />
+						</div>
+						<div class="dscr-wrap">description</div>
+						<div class="reg-date-wrap meta">2014.11.20 11:12:59</div>
+						<div class="name-wrap">nonpuritan</div>
+					</div>
+				</div>
+				<div class="grid" id="div-detail-img">
+					<div class="grid_padding">
+						<div class="imgholder">
+							<img src=".images/img01.gif" />
+						</div>
+						<div class="dscr-wrap">description</div>
+						<div class="reg-date-wrap meta">2014.11.20 11:12:59</div>
+						<div class="name-wrap">nonpuritan</div>
+					</div>
+				</div>
+				<div class="grid" id="div-detail-img">
+					<div class="grid_padding">
+						<div class="imgholder">
+							<img src=".images/img01.gif" />
+						</div>
+						<div class="dscr-wrap">description</div>
+						<div class="reg-date-wrap meta">2014.11.20 11:12:59</div>
+						<div class="name-wrap">nonpuritan</div>
+					</div>
+				</div>
+				<div class="grid" id="div-detail-img">
+					<div class="grid_padding">
+						<div class="imgholder">
+							<img src=".images/img01.gif" />
+						</div>
+						<div class="dscr-wrap">description</div>
+						<div class="reg-date-wrap meta">2014.11.20 11:12:59</div>
+						<div class="name-wrap">nonpuritan</div>
+					</div>
+				</div>
+				<div class="grid" id="div-detail-img">
+					<div class="grid_padding">
+						<div class="imgholder">
+							<img src=".images/img01.gif" />
+						</div>
+						<div class="dscr-wrap">description</div>
+						<div class="reg-date-wrap meta">2014.11.20 11:12:59</div>
+						<div class="name-wrap">nonpuritan</div>
+					</div>
+				</div>
+				<div class="grid" id="div-detail-img">
+					<div class="grid_padding">
+						<div class="imgholder">
+							<img src=".images/img01.gif" />
+						</div>
+						<div class="dscr-wrap">description</div>
+						<div class="reg-date-wrap meta">2014.11.20 11:12:59</div>
+						<div class="name-wrap">nonpuritan</div>
+					</div>
+				</div>
+				<div class="grid" id="div-detail-img">
+					<div class="grid_padding">
+						<div class="imgholder">
+							<img src=".images/img01.gif" />
+						</div>
+						<div class="dscr-wrap">description</div>
+						<div class="reg-date-wrap meta">2014.11.20 11:12:59</div>
+						<div class="name-wrap">nonpuritan</div>
+					</div>
+				</div>
+			</div>
+    </div>
+  </body>
+</html> 
