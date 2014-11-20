@@ -6,8 +6,8 @@
 		offsetX: 5,
 		offsetY: 5,
 		adjustWidth: false,
-		sortElementClass: 'div',
-		sortElement:'',
+		blockElement: 'div',
+		sortElementClass:'',
 		sortOpt:'asc'
 	};
 	
